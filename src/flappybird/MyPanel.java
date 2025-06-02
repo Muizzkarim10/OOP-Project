@@ -14,14 +14,13 @@ public class MyPanel extends JPanel {
     private int obsX = 300;
     private int yTop = 0;
     private int gap = 110; // change this to control vertical space between top and bottom pipes
+    private int spacing = 200; // horizontal spacing between each pair
 
+    
     private boolean gameRunnig = true;
     private final ImageIcon birdGif;
     private final ImageIcon background;
 
-    private Obstacle[] obstacles;
-    private int numPairs = 5; // 5 pairs of pipes (top + bottom)
-    private int spacing = 200; // horizontal spacing between each pair
 
     private Obstacle obstacle1;
     private Obstacle obstacle2;
