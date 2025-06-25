@@ -21,7 +21,6 @@ public class Obstacle {
 
         String imagePath = isTop ? "src/Assets/up.png" : "src/Assets/ob.png";
         ImageIcon icon = new ImageIcon(imagePath);
-        ImageIcon icon1 = new ImageIcon(imagePath);
 
         this.image = icon.getImage().getScaledInstance(width, height, Image.SCALE_SMOOTH);
     }
@@ -49,5 +48,14 @@ public class Obstacle {
     public void setPassed(boolean passed) {
         this.passed = passed;
     }
+
+    public int getY() {
+    return y;
+    }
+
+    public int getHeight() {
+     return height;
+    }
 }
+
 
