@@ -285,40 +285,7 @@ public class MyPanel extends JPanel {
             obstacle5.setX(maxX + spacing);
             obstacle6.setX(maxX + spacing);
             resetPassed(obstacle5, obstacle6);
-        } protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-
-        // Draw background and bird
-        g.drawImage(background.getImage(), 0, 0, frmWidth, frmHeight, this);
-        g.drawImage(birdGif.getImage(), birdX, birdY, 70, 70, this);
-
-        // Draw obstacles
-        obstacle1.draw(g);
-        obstacle2.draw(g);
-        obstacle3.draw(g);
-        obstacle4.draw(g);
-        obstacle5.draw(g);
-        obstacle6.draw(g);
-        obstacle7.draw(g);
-        obstacle8.draw(g);
-        obstacle9.draw(g);
-        obstacle10.draw(g);
-
-        // Draw score box
-        Graphics2D g2 = (Graphics2D) g;
-        int boxWidth = 120;
-        int boxHeight = 40;
-
-        g2.setColor(new Color(0, 0, 0, 150)); // semi-transparent black background
-        g2.fillRoundRect(10, 10, boxWidth, boxHeight, 15, 15);
-
-        g2.setColor(Color.WHITE); // white border
-        g2.setStroke(new BasicStroke(2));
-        g2.drawRoundRect(10, 10, boxWidth, boxHeight, 15, 15);
-
-        g2.setFont(new Font("Arial", Font.BOLD, 18));
-        g2.drawString("Score: " + score, 20, 37); // Adjust text position
-    }
+        }
         if (obstacle7.getX() + obsWidth < 0) {
             obstacle7.setX(maxX + spacing);
             obstacle8.setX(maxX + spacing);
